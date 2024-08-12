@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
+import Header from "./components/Header.jsx"
+import Navigation from "./components/Navigation.jsx";
+import Profile from "./components/Profile.jsx";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-     Hello, samurai! Let's go!
-    </div>
+      <div className='app-wrapper'>
+          <Header/>
+          <Navigation/>
+          <Profile/>
+      </div>
   );
 }
 
