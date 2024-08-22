@@ -1,7 +1,12 @@
 .nav {
+    display: flex;
+    flex-direction: column;
     color: #0077FF;
     background-color: #fff;
+    width: 100px;
+
 }
 .item {
     color: #0077FF;
+    padding: 20px 0 0 20px;
 }
