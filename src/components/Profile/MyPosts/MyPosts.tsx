@@ -6,7 +6,8 @@ export const MyPosts = () => {
     const [currentPosts, setCurrentPosts] = useState<Array<PostPropsType>>([
         {message: 'hello world'},
         {message: 'Hello Dasha'},
-        {message: 'Privet Andrey'}
+        {message: 'Privet Andrey'},
+        {message: 'By, mr. Person'},
     ])
     return (
         <div>
