@@ -23,7 +23,7 @@ export const MyPosts = () => {
                    onChange={onChangeCurrentInput}
                    onKeyDown={onKeyDownHandler}
             />
-            <button onClick={addNewPost}>Add new post</button>
+            <button onClick={addNewPost} className={classes.button}>Add new post</button>
             <div>
                 New posts
             </div>
