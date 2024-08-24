@@ -3,18 +3,15 @@ import s from '../MyPosts/MyPosts.module.css'
 import {Post, PostPropsType} from "./Post/Post";
 
 export const MyPosts = () => {
-    const [currentPosts, setCurrentPosts] = useState<Array<PostPropsType>>([
-        {message: 'hello world'},
-        {message: 'Hello Dasha'},
-        {message: 'Privet Andrey'},
-        {message: 'By, mr. Person'},
-    ])
+    const [currentPosts, setCurrentPosts] = useState<Array<PostPropsType>>([])
+    const [currentInput, setCurrentInput] = useState('')
     return (
         <div>
             <div>
                 My posts
             </div>
-            <input/><button>Add new post</button>
+            <input value={currentInput} onChange={(e) => (setCurrentInput(e.currentTarget.value))}/>
+            <button onClick={() => setCurrentPosts([...currentPosts, { message: currentInput }])}>Add new post</button>
             <div>
                 New posts
             </div>
@@ -22,5 +19,5 @@ export const MyPosts = () => {
                 {currentPosts.map((post) => <Post message={post.message}/>)}
             </div>
         </div>
-)
+    )
 }
