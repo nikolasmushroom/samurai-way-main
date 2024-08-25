@@ -1,6 +1,8 @@
 .content {
-    color: #fff;
-    background-color: #0077FF;
+    color: #64485C;
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
     margin: 0 auto;
 }
 .content img {

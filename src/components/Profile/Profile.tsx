@@ -7,7 +7,7 @@ const Profile = () => {
         <div className={classes.content}>
             <div className={classes.img}>
                 <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/009/871/929/small_2x/abstract-wave-blue-background-free-vector.jpg"
+                    src=""
                     alt="backg"/>
             </div>
 
