@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'Bowlby One', sans-serif;
+  src: url("./asserts/fonts/BowlbyOne-Regular.woff2") format('woff2');
+  src: url("./asserts/fonts/BowlbyOne-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .app-wrapper {
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  width: 1080px;
   margin: 0 auto;
 }
 .main-content {

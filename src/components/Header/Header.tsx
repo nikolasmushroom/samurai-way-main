@@ -1,9 +1,10 @@
 import React from "react";
 import classes from './Header.module.css';
-const Header = () => {
+import logo from  '../../asserts/images/mobile-logo.png'
+const Header : React.FC= () => {
     return (
         <header className={classes.header}>
-            <img src='https://cdn.worldvectorlogo.com/logos/blue-1.svg' alt="logo"/>
+            <img src={logo} alt="logo"/>
         </header>
     )
 }

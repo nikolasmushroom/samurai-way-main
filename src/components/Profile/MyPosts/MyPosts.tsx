@@ -15,18 +15,18 @@ export const MyPosts = () => {
         }
     }
     return (
-        <div>
-            <div>
+        <div className={classes.post}>
+            <h2>
                 My posts
-            </div>
+            </h2>
             <input className={classes.input} value={currentInput}
                    onChange={onChangeCurrentInput}
                    onKeyDown={onKeyDownHandler}
             />
             <button onClick={addNewPost} className={classes.button}>Add new post</button>
-            <div>
+            <h2>
                 New posts
-            </div>
+            </h2>
             <div className={s.posts}>
                 {currentPosts.map((post) => <Post message={post.message}/>)}
             </div>

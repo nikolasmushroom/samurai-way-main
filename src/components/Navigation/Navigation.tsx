@@ -1,10 +1,10 @@
 import React from "react";
 import classes from './Navigation.module.css';
 
-const Navigation = () => {
+const Navigation : React.FC = () => {
     return (
         <nav className={classes.nav}>
-            <div className={classes.item}>
+            <div  className={classes.item}>
                 Profile
             </div>
             <div className={classes.item}>

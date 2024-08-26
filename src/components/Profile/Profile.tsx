@@ -1,14 +1,15 @@
 import React from "react";
 import classes from './Profile.module.css';
 import {MyPosts} from "./MyPosts/MyPosts";
+import background from '../../asserts/images/background-image.png'
 
-const Profile = () => {
+const Profile : React.FC = () => {
     return (
         <div className={classes.content}>
             <div className={classes.img}>
                 <img
-                    src=""
-                    alt="backg"/>
+                    src={background}
+                    alt="background"/>
             </div>
 
             <div>
