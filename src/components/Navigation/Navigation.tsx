@@ -5,7 +5,7 @@ const Navigation : React.FC = () => {
     return (
         <nav className={classes.nav}>
             <div  className={classes.item}>
-                <NavLink to="/profile" className={({isActive}) => (isActive? classes.activeLink : '')}>Profile</NavLink>
+                <NavLink to="/" className={({isActive}) => (isActive? classes.activeLink : '')}>Profile</NavLink>
             </div>
             <div className={classes.item}>
                 <NavLink to="/dialogs" className={({isActive}) => (isActive? classes.activeLink : '')}>Messages</NavLink>
